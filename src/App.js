@@ -1,6 +1,7 @@
 import './App.css';
 import React, {Component} from "react";
 import { Fragment } from 'react/cjs/react.production.min';
+import Membre from './components/Membre';
 
 class App extends Component{
   render () {
@@ -8,7 +9,7 @@ class App extends Component{
       <Fragment>
       <div className='App'>
         <h1>TUTO REACT</h1>
-        <p></p>
+        <Membre />
       </div>
       </Fragment>
     )
