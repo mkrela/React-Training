@@ -1,18 +1,22 @@
-import './App.css';
-import React, {Component} from "react";
-import { Fragment } from 'react/cjs/react.production.min';
-import Membre from './components/Membre';
+import "./App.css";
+import React, { Component } from "react";
+import { Fragment } from "react/cjs/react.production.min";
+import Membre from "./components/Membre";
 
-class App extends Component{
-  render () {
+class App extends Component {
+  render() {
     return (
       <Fragment>
-      <div className='App'>
-        <h1>TUTO REACT</h1>
-        <Membre />
-      </div>
+        <div className="App">
+          <h1>TUTO REACT</h1>
+          <Membre nom="Francesca"> C'est moi la plus belle </Membre>
+          <Membre nom="Fabrice" />
+          <Membre nom="Doris" />
+          <Membre nom="Romane" />
+          <Membre nom="Matthieu" />
+        </div>
       </Fragment>
-    )
+    );
   }
 }
 
