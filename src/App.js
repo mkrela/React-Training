@@ -16,6 +16,8 @@ class App extends Component {
   handleClick = () => {
     const famille={ ...this.state.famille}
     famille.membre1.age += 1
+    famille.membre2.age += 1 
+    famille.membre3.age += 1
     this.setState({famille})
   }
 
