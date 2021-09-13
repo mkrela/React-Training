@@ -3,17 +3,33 @@ import React, { Component } from "react";
 import { Fragment } from "react/cjs/react.production.min";
 import Membre from "./components/Membre";
 
+
+const famille = {
+  membre1: {nom:'Matthieu',
+            age:27
+          },
+  membre2: {nom:'Francesca',
+            age:26
+          },
+membre3: {nom:'Kobe',
+          age:5
+}
+}
 class App extends Component {
+  state= {
+    famille
+  }
   render() {
+    const {titre} = this.props
+    const {famille}= this.state
     return (
       <Fragment>
         <div className="App">
           <h1>TUTO REACT</h1>
           <Membre nom="Francesca"> C'est moi la plus belle </Membre>
-          <Membre nom="Fabrice" />
-          <Membre nom="Doris" />
-          <Membre nom="Romane" />
-          <Membre nom="Matthieu" />
+          <Membre nom={famille.membre1.nom} />
+          <Membre nom={famille.membre2.nom} />
+          <Membre nom={famille.membre3.nom} />
         </div>
       </Fragment>
     );
