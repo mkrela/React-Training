@@ -1,0 +1,6 @@
+button {
+    background-color: violet;
+    padding: 1rem;
+    border-radius: 1em;
+    box-shadow: 0 0 3px grey;
+}
